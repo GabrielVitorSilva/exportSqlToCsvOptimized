@@ -1,0 +1,26 @@
+{
+  "name": "exportando-csv-do-postgres-no-node",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "seed": "tsx src/database/seed.ts",
+    "export": "tsx src/export.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@faker-js/faker": "^9.7.0",
+    "@types/node": "^22.14.1",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "csv-stringify": "^6.5.2",
+    "dotenv": "^16.5.0",
+    "postgres": "^3.4.5"
+  }
+}
