@@ -9,6 +9,11 @@ console.time('Tempo de exportação');
 const query = sql`SELECT * FROM stock_terminal`;
 const cursor = query.cursor(500);
 
+// for await (const rows of cursor) {
+//   console.log(rows);
+//   break;
+// }
+
 let isFirstChunk = true;
 let dynamicStringifier;
 
